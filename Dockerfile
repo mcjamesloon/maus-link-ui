@@ -7,7 +7,7 @@ RUN apk add --no-cache python3
 
 COPY package.json ./
 COPY package-lock.json ./
-RUN npm update
+RUN npm update --force
 RUN npm install
 
 COPY . ./
